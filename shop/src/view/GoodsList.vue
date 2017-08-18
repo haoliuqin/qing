@@ -86,7 +86,7 @@
         priceChecked:'all',
         busy:true,
         page:1,
-        pageize:8,
+        pagesize:8,
         flag:false,
         mdShow:false,
         mdShowCart:false,
@@ -165,6 +165,7 @@
       },
       loadMore(){
         this.busy = true;
+        this.flag=true;
         setTimeout(() => {
           this.page ++;
           this.getGoodsList(true);
